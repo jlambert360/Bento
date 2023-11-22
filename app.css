@@ -7,6 +7,7 @@
 /* V A R I A B L E S */
 
 /*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); /* Font Import */
+@import url('https://use.typekit.net/oov2wcw.css'); /* Font Import */
 @import url('assets/fonts/GOTHICB.TTF'); /* Font Import */
 
 :root {
@@ -57,7 +58,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Century Gothic', serif;
+  font-family: century-gothic, sans-serif;
   transition: 0.2s ease-in-out;
 }
 
