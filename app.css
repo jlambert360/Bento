@@ -11,25 +11,25 @@
 :root {
   /* Font Size */
   --fg-primary: 12vh; /* Time and Greetings */
-  --fg-secondary: 3vh; /* Greetings and Weather widger */
-  --fg-date: 8vh; /* Date */
+  --fg-secondary: 4vh; /* Greetings and Weather widger */
+  --fg-date: 12vh; /* Date */
   --fg-list: 2vh; /* Links List */
   --icon: 3vh; /* Icon Size */
 
   /* Fonts Color */
-  --fg: #3a3a3a; /* Foreground color */
-  --sfg: #494949; /* Sceondary Foreground color */
+  --fg: #d8dee9; /* Foreground color */
+  --sfg: #2c292e; /* Sceondary Foreground color */
 
   /* Light Colors  */
   --accent: #57a0d9; /* Hover color */
   --background: #f5f5f5; /* Background color */
-  --cards: #e4e6e6; /* Cards color */
+  --cards: #201e21; /* Cards color */
 
   /* Image background  */
-  --imgbg: url(assets/background.jpg); /* Image URL */
+  /*--imgbg: url(assets/1688796464769007.png); /* Image URL */
   --imgcol: linear-gradient(
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.7)
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
   ); /* Filter color */
 }
 
@@ -45,8 +45,8 @@
 
   /* Image background  */
   --imgcol: linear-gradient(
-    rgba(0, 0, 0, 0.85),
-    rgba(0, 0, 0, 0.85)
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
   ); /* Filter color */
 }
 
@@ -56,7 +56,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Century Gothic', serif;
   transition: 0.2s ease-in-out;
 }
 
@@ -77,8 +77,69 @@ body {
 }
 
 .withImageBackground {
-  background-image: var(--imgcol), var(--imgbg);
+  /*background-image: var(--imgcol), var(--imgbg);*/
+  background-image: var(--imgbg);
   background-size: cover;
+}
+
+.backgroundImage {
+	z-index: -100;
+	position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.backgroundVideo {
+	aspect-ratio: 4 / 3;
+	position: fixed;
+	top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+	min-width: 50%;
+	min-height: 50%;
+	margin: auto;
+	z-index: -100;
+}
+
+.GuraMarineVideo {
+	aspect-ratio: 4 / 3;
+	position: fixed;
+	top: -35px;
+    bottom: 0;
+    right: 0;
+    left: -504px;
+	max-width: 11%;
+	max-height: 16%;
+	margin: auto;
+	z-index: -101;
+}
+
+.caliGirls {
+    position: fixed;
+    top: 263px;
+    left: 903px;
+    max-width: 37%;
+    max-height: 20%;
+    z-index: -3;
+}
+
+.loliKami {
+	position: fixed;
+	top: -150px;
+	min-width: 10%;
+	min-height: 10%;
+	z-index: -3;
+}
+
+.holodex {
+    position: fixed;
+    min-width: 33%;
+    min-height: 100%;
+    top: -1px;
+    right: 0;
+    border-style: none;
+    z-index: 1;
 }
 
 #themeButton {
@@ -86,10 +147,11 @@ body {
   margin: 2em 2em 0 0;
   right: 0;
   top: 0;
-  color: var(--fg);
+  --fg: #3a3a3a; /* Foreground color */
   border: none;
   cursor: pointer;
   background-color: #00000000;
+  visibility: hidden
 }
 
 #themeIcon {
@@ -119,37 +181,54 @@ body {
 }
 
 .timeBlock {
+  user-select: none;
   grid-row: 1 / span 2;
   grid-column: 1 / span 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /*-webkit-text-stroke-width: 3px; 
+  -webkit-text-stroke-color: black;*/
+  --fg: #3a3a3a; /* Foreground color */
+  margin-left: -455px;
+  margin-top: -252px;
 }
 
 .weatherBlock {
-  grid-column: 3 / span 2;
-  grid-row: 1 / span 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    user-select: none;
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    --fg: #3a3a3a;
+    position: absolute;
+    top: 29px;
+    right: 742px;
 }
 
 .date {
+  user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  /*-webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: black;*/
+  --fg: #3a3a3a; /* Foreground color */
 }
 
 .weather {
+  user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .clock {
+  user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,13 +240,15 @@ body {
   font-size: var(--fg-primary);
   font-weight: bolder;
   color: var(--fg);
+  -webkit-text-stroke: 1px white;
 }
 
 #month,
 #day {
   font-size: var(--fg-date);
-  font-weight: bold;
+  font-weight: bolder;
   color: var(--fg);
+  -webkit-text-stroke: 1px white;
 }
 
 #day {
@@ -177,11 +258,18 @@ body {
 #greetings {
   font-size: var(--fg-secondary);
   color: var(--fg);
+  visibility: hidden
 }
 
 .weatherIcon img {
   width: 70px;
   height: 70px;
+  user-drag: none;  
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .weatherValue p {
@@ -189,12 +277,15 @@ body {
   font-weight: bolder;
   margin-left: 15px;
   color: var(--fg);
+  -webkit-text-stroke: .5px white;
 }
 
 .weatherDescription p {
   font-size: var(--fg-secondary);
+  font-weight: bolder;
   margin-left: 15px;
   color: var(--fg);
+  -webkit-text-stroke: 0.5px white;
 }
 
 .reduceGap {
@@ -212,6 +303,9 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 1.5rem;
+  position: relative;
+  left: -275px;
+  bottom: -81px;
 }
 
 .linksBlockLeft {
@@ -222,6 +316,7 @@ body {
 .linksBlockRight {
   grid-row: 1 / span 2;
   grid-column: 3 / span 2;
+  max-width: 84%;
 }
 
 .buttonsContainer {
@@ -320,6 +415,7 @@ body {
   font-weight: bold;
   text-align: center;
   width: 80%;
+  user-select: none;
 }
 .listItem:hover {
   background-color: var(--accent);

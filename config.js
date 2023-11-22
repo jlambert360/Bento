@@ -11,10 +11,10 @@ const CONFIG = {
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
 	// General
-	name: 'John',
-	imageBackground: false,
-	openInNewTab: true,
-	twelveHourFormat: false,
+	name: 'Tooli',
+	imageBackground: true,
+	openInNewTab: false,
+	twelveHourFormat: true,
 
 	// Greetings
 	greetingMorning: 'Good morning!',
@@ -26,20 +26,20 @@ const CONFIG = {
 	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
 
 	// Weather
-	weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
+	weatherKey: 'd27a95e8daf573d1a7f33b3679d85c8c', // Write here your API Key
 	weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
-	weatherUnit: 'C', // 'F', 'C'
+	weatherUnit: 'F', // 'F', 'C'
 	language: 'en', // More languages in https://openweathermap.org/current#multi
 
-	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
-	defaultLatitude: '37.775',
-	defaultLongitude: '-122.419',
+	trackLocation: false, // If false or an error occurs, the app will use the lat/lon below
+	defaultLatitude: '40.656643',
+	defaultLongitude: '-73.54904',
 
 	// Autochange
-	autoChangeTheme: true,
+	autoChangeTheme: false,
 
 	// Autochange by OS
-	changeThemeByOS: true,
+	changeThemeByOS: false,
 
 	// Autochange by hour options (24hrs format, string must be in: hh:mm)
 	changeThemeByHour: false,
@@ -53,39 +53,39 @@ const CONFIG = {
 	firstButtonsContainer: [
 		{
 			id: '1',
+			name: 'Youtube',
+			icon: 'youtube',
+			link: 'https://www.youtube.com/',
+		},
+		{
+			id: '2',
+			name: 'Twitch',
+			icon: 'twitch',
+			link: 'https://www.twitch.tv/directory/following',
+		},
+		{
+			id: '3',
+			name: 'Angelthump',
+			icon: 'clapperboard',
+			link: 'https://angelthump.com/',
+		},
+		{
+			id: '4',
 			name: 'Github',
 			icon: 'github',
 			link: 'https://github.com/',
 		},
 		{
-			id: '2',
-			name: 'Mail',
-			icon: 'mail',
-			link: 'https://mail.protonmail.com/',
-		},
-		{
-			id: '3',
-			name: 'Todoist',
-			icon: 'trello',
-			link: 'https://todoist.com',
-		},
-		{
-			id: '4',
-			name: 'Calendar',
-			icon: 'calendar',
-			link: 'https://calendar.google.com/calendar/r',
-		},
-		{
 			id: '5',
-			name: 'Reddit',
-			icon: 'glasses',
-			link: 'https://reddit.com',
+			name: 'Twitter',
+			icon: 'twitter',
+			link: 'https://twitter.com/',
 		},
 		{
 			id: '6',
-			name: 'Odysee',
-			icon: 'youtube',
-			link: 'https://odysee.com/',
+			name: 'Holodex',
+			icon: 'play',
+			link: 'https://holodex.net/',
 		},
 	],
 
@@ -139,42 +139,42 @@ const CONFIG = {
 			id: '1',
 			links: [
 				{
-					name: 'Inspirational',
+					name: 'Playlist',
+					link: 'https://www.youtube.com/playlist?list=PL8c0AV7KC2pzO9xbJH7Qo_tYKR6pQtZCf',
+				},
+				{
+					name: 'What',
 					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 				{
-					name: 'Classic',
+					name: 'The',
 					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 				{
-					name: 'Oldies',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-				},
-				{
-					name: 'Rock',
+					name: 'Frick',
 					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 			],
 		},
 		{
-			icon: 'coffee',
+			icon: 'syringe',
 			id: '2',
 			links: [
 				{
-					name: 'Linkedin',
-					link: 'https://www.linkedin.com',
+					name: 'Chuba Posters',
+					link: 'https://boards.4channel.org/vt/',
 				},
 				{
-					name: 'Dribbble',
-					link: 'https://www.dribbble.com',
+					name: 'Anime',
+					link: 'https://animepahe.ru/',
 				},
 				{
-					name: 'Trello',
-					link: 'https://www.trello.com',
+					name: 'Bitwarden',
+					link: 'https://vaultwarden.tooli.duckdns.org',
 				},
 				{
-					name: 'Slack',
-					link: 'https://www.slack.com',
+					name: 'Jellyfin',
+					link: 'https://jellyfin.tooli.duckdns.org',
 				},
 			],
 		},
