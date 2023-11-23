@@ -7,7 +7,8 @@
 /* V A R I A B L E S */
 
 /*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); /* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700;800;900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700;800;900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root {
   /* Font Size */
@@ -57,7 +58,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   transition: 0.2s ease-in-out;
 }
 
