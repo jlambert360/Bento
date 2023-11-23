@@ -105,16 +105,12 @@ body {
 }
 
 .GuraMarineVideo {
-	aspect-ratio: 4 / 3;
-	position: fixed;
-	top: -35px;
-    bottom: 0;
-    right: 0;
-    left: -504px;
-	max-width: 11%;
-	max-height: 16%;
-	margin: auto;
-	z-index: -101;
+    position: fixed;
+    width: 11vw;
+    height: 16vh;
+    left: 31.5%;
+    top: 40.5%;
+    z-index: -101;
 }
 
 .caliGirls {
