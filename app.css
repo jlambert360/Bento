@@ -7,8 +7,7 @@
 /* V A R I A B L E S */
 
 /*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); /* Font Import */
-@import url('https://use.typekit.net/oov2wcw.css'); /* Font Import */
-@import url('assets/fonts/GOTHICB.TTF'); /* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700;800;900&display=swap');
 
 :root {
   /* Font Size */
@@ -58,7 +57,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: century-gothic, sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   transition: 0.2s ease-in-out;
 }
 
@@ -240,7 +239,7 @@ body {
 #separator,
 #minutes {
   font-size: var(--fg-primary);
-  font-weight: bolder;
+  font-weight: 900;
   color: var(--fg);
   -webkit-text-stroke: 1px white;
 }
@@ -248,7 +247,7 @@ body {
 #month,
 #day {
   font-size: var(--fg-date);
-  font-weight: bolder;
+  font-weight: 900;
   color: var(--fg);
   -webkit-text-stroke: 1px white;
 }
@@ -276,7 +275,7 @@ body {
 
 .weatherValue p {
   font-size: var(--fg-secondary);
-  font-weight: bolder;
+  font-weight: 900;
   margin-left: 15px;
   color: var(--fg);
   -webkit-text-stroke: .5px white;
@@ -284,7 +283,7 @@ body {
 
 .weatherDescription p {
   font-size: var(--fg-secondary);
-  font-weight: bolder;
+  font-weight: 900;
   margin-left: 15px;
   color: var(--fg);
   -webkit-text-stroke: 0.5px white;
