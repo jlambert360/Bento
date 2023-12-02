@@ -143,8 +143,8 @@ const CONFIG = {
 					link: 'https://www.youtube.com/playlist?list=PL8c0AV7KC2pzO9xbJH7Qo_tYKR6pQtZCf',
 				},
 				{
-					name: 'What',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Wan',
+					link: 'https://wanwan.moe/',
 				},
 				{
 					name: 'The',
