@@ -2,13 +2,14 @@
 // ├┴┐│ │ │  │ │ ││││└─┐
 // └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
 // Function to print Button Cards.
+// target="${CONFIG.openInNewTab ? '_blank' : ''}"
 
 const generateFirstButtonsContainer = () => {
 	for (const button of CONFIG.firstButtonsContainer) {
 		let item = `
         <a
           href="${button.link}"
-          target="sidebarFrame" // target="${CONFIG.openInNewTab ? '_blank' : ''}"
+          target="sidebarFrame"
           class="card button button__${button.id}"
         >
           <i class="buttonIcon" icon-name="${button.icon}"></i>

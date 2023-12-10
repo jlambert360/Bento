@@ -77,9 +77,9 @@ const CONFIG = {
 		},
 		{
 			id: '5',
-			name: 'Twitter',
-			icon: 'twitter',
-			link: 'https://twitter.com/',
+			name: 'Chuba Posters',
+			icon: 'clover',
+			link: 'https://boards.4channel.org/vt/',
 		},
 		{
 			id: '6',
@@ -135,7 +135,7 @@ const CONFIG = {
 	// First Links Container
 	firstlistsContainer: [
 		{
-			icon: 'music',
+			icon: 'snail',
 			id: '1',
 			links: [
 				{
@@ -147,8 +147,8 @@ const CONFIG = {
 					link: 'https://wanwan.moe/',
 				},
 				{
-					name: 'The',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Anime Schedule',
+					link: 'https://livechart.me/',
 				},
 				{
 					name: 'Frick',
@@ -156,13 +156,39 @@ const CONFIG = {
 				},
 			],
 		},
-		{
+		/*{
 			icon: 'syringe',
 			id: '2',
 			links: [
 				{
-					name: 'Chuba Posters',
-					link: 'https://boards.4channel.org/vt/',
+					name: 'Twitter',
+					link: 'https://twitter.com/',
+				},
+				{
+					name: 'Anime',
+					link: 'https://animepahe.ru/',
+				},
+				{
+					name: 'Bitwarden',
+					link: 'https://vaultwarden.tooli.duckdns.org',
+				},
+				{
+					name: 'Jellyfin',
+					link: 'https://jellyfin.tooli.duckdns.org',
+				},
+			],
+		},*/
+	],
+
+	// Second Links Container
+	secondListsContainer: [
+		{
+			icon: 'syringe',
+			id: '1',
+			links: [
+				{
+					name: 'Twitter',
+					link: 'https://twitter.com/',
 				},
 				{
 					name: 'Anime',
@@ -178,33 +204,7 @@ const CONFIG = {
 				},
 			],
 		},
-	],
-
-	// Second Links Container
-	secondListsContainer: [
-		{
-			icon: 'binary',
-			id: '1',
-			links: [
-				{
-					name: 'Spotify',
-					link: 'https://www.spotify.com',
-				},
-				{
-					name: 'Reddit',
-					link: 'https://www.reddit.com',
-				},
-				{
-					name: 'Hashnode',
-					link: 'https://www.hashnode.com',
-				},
-				{
-					name: 'Pocket',
-					link: 'https://www.pocket.com',
-				},
-			],
-		},
-		{
+		/*{
 			icon: 'github',
 			id: '2',
 			links: [
@@ -225,6 +225,6 @@ const CONFIG = {
 					link: 'https://github.com/migueravila',
 				},
 			],
-		},
+		},*/
 	],
 };
