@@ -130,7 +130,7 @@ body {
 	z-index: -3;
 }
 
-.sidebar {
+#sidebar {
     position: fixed;
     min-width: 33%;
     min-height: 100%;
